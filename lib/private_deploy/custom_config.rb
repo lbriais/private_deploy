@@ -2,7 +2,7 @@ module PrivateDeploy
 
   class CustomConfig < SuperStack::Manager
 
-    CONFIG_FILE_BASENAME = 'gem_private_deploy'
+    CONFIG_FILE_BASENAME = 'private_deploy'
     ENV_VARIABLES_FILTER = 'gem_private_deployment_url'
 
     include StackedConfig::ProgramDescriptionHelper
