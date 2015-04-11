@@ -23,5 +23,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'rspec'
 
-  spec.add_runtime_dependency 'easy_app_helper'
+  spec.add_runtime_dependency 'stacked_config'
+
+  spec.add_dependency 'geminabox'
+
 end
