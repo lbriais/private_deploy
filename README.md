@@ -1,6 +1,6 @@
 # PrivateDeploy
 
-TODO: Write a gem description
+NOT YET READY FOR PRODUCTION
 
 ## Installation
 
