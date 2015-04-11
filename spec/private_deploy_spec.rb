@@ -14,7 +14,7 @@ describe PrivateDeploy do
 
   it 'should always have a url specified in the config' do
     expect(subject.config[]).not_to be_empty
-    expect(subject.config[subject::GEM_PRIVATE_DEPLOYMENT_VARIABLE]).not_to be_nil
+    expect(subject.config[subject::CustomConfig::ENV_VARIABLES_FILTER]).not_to be_nil
   end
 
 
