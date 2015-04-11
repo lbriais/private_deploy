@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 require 'stacked_config'
 
 require 'private_deploy/version'

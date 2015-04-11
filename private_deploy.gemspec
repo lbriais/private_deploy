@@ -3,6 +3,9 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'private_deploy/version'
 
+
+
+
 Gem::Specification.new do |spec|
   spec.name          = 'private_deploy'
   spec.version       = PrivateDeploy::VERSION
@@ -27,4 +30,12 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'geminabox'
 
+
+  Gem.post_install do |installer|
+    puts 'CARAMBA YE REOUSSI'
+
+    puts installer
+  end
+
 end
+
