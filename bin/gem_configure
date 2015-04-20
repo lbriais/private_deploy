@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+require 'private_deploy'
+require 'thor'
+
+module PrivateDeploy
+
+  module SubCommands
+
+    class Privatize < Thor
+
+      desc 'path GEM_PATH', 'Modifies gem at the given path(default is current directory)'
+
+      def path(gem_path='.')
+        puts 'I will patch gem at ' << gem_path
+
+        puts  parent_options.to_yaml
+      end
+
+    end
+
+  end
+
+
+  class GemConfigureCLI < Thor
+
+    desc 'privatize SUBCOMMAND ...ARGS', 'Privatize a Gem, ie the Gem will be deployed to a private Gem server'
+    subcommand 'privatize', SubCommands::Privatize
+
+  end
+end
+
+PrivateDeploy::GemConfigureCLI.start(ARGV)

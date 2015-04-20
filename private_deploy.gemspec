@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
 
   spec.add_runtime_dependency 'stacked_config'
+  spec.add_dependency 'thor'
 
   spec.add_dependency 'geminabox'
 
